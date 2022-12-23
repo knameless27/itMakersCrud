@@ -1,27 +1,10 @@
-# PruebaTecnica
+¡Hola! 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+Este proyecto ha sido realizado en Angular en su version 15.0.4.
 
-## Development server
+me ha tomado alrededor de 9 horas, 4 horas haciendo el proyecto en bootstrap (Porque no habia leiido que tenia que usar la
+libreria de materials), 3 horas aprendiendo la libreria de materials y las otras 2 haciendo la logica y el desarrollo de 
+este aplicativo.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Ha sido muy divertido realizar esta prueba puesto que he tenido que volver a retomar angular (que no lo uso desde hace
+1 año y medio) y que he estado masterizando vue, ha sido un reto que sin duda volveria a hacer.

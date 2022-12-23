@@ -1,0 +1,11 @@
+<mat-grid-list cols="3" rowHeight="2:1">
+  <mat-grid-tile *ngFor="let usuario of usuarios">
+      <mat-card [routerLink]="['/','perfil',usuario.id]">
+        <mat-card-header>
+          <mat-card-title>{{ usuario.first_name }} {{ usuario.last_name }}</mat-card-title>
+          <mat-card-subtitle>{{ usuario.email }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{ usuario.avatar }}" alt="XD">
+      </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

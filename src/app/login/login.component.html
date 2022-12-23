@@ -1,0 +1,33 @@
+<mat-grid-list cols="1" rowHeight="3:1">
+  <mat-grid-tile>
+    <mat-card style="padding: 2%">
+      <mat-card-header>
+        <mat-card-title>Iniciar sesion</mat-card-title>
+      </mat-card-header>
+      <form [formGroup]="formLogin" (submit)="send()" class="example-form">
+        <mat-form-field>
+          <mat-label for="email">Email</mat-label>
+          <input matInput id="email" type="text" formControlName='email' />
+        </mat-form-field>
+        <!-- <mat-divider></mat-divider>
+        <mat-form-field>
+          <mat-label for="text">Nombre de usuario</mat-label>
+          <input matInput id="username" type="text" formControlName='username' />
+        </mat-form-field> -->
+        <mat-divider></mat-divider>
+        <mat-form-field>
+          <mat-label for="password">Contraseña</mat-label>
+          <input matInput id="password" type="password" formControlName='password' />
+        </mat-form-field>
+        <mat-divider></mat-divider>
+        <!-- <hr />
+          <a href="#">Registrarse</a>
+          <br />
+          <br /> -->
+        <button mat-button (click)="send()">
+          Enviar
+        </button>
+      </form>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

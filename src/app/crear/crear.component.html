@@ -1,0 +1,28 @@
+<mat-grid-list cols="1" rowHeight="3:1">
+  <mat-grid-tile>
+    <mat-card style="padding: 2%">
+      <mat-card-header>
+        <mat-card-title>Crear usuario</mat-card-title>
+      </mat-card-header>
+      <form [formGroup]="formLogin" (submit)="send()" class="example-form">
+        <mat-form-field>
+          <mat-label for="nombre">Nombre</mat-label>
+          <input matInput id="nombre" type="text" formControlName='nombre' />
+        </mat-form-field>
+        <mat-divider></mat-divider>
+        <mat-form-field>
+          <mat-label for="trabajo">Trabajo</mat-label>
+          <input matInput id="trabajo" type="text" formControlName='trabajo' />
+        </mat-form-field>
+        <mat-divider></mat-divider>
+        <!-- <hr />
+          <a href="#">Registrarse</a>
+          <br />
+          <br /> -->
+        <button mat-button (click)="send()">
+          Enviar
+        </button>
+      </form>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

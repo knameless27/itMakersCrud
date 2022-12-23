@@ -1,0 +1,43 @@
+<mat-grid-list cols="1" rowHeight="3:1">
+  <mat-grid-tile cols="1">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{ usuario.first_name }} {{ usuario.last_name }}</mat-card-title>
+          <mat-card-subtitle>{{ usuario.email }}</mat-card-subtitle>
+          <img mat-card-xl-image src="{{ usuario.avatar }}">
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        <br />
+        <mat-divider></mat-divider>
+        <br />
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, officia id aliquid doloremque.</p>
+        <button mat-button color="primary" (click)="editBool = !(editBool)">Editar</button>
+        <button mat-button color="warn" (click)="borrar()">Borrar</button>
+        <mat-accordion>
+          <mat-expansion-panel [expanded]="editBool" hideToggle>
+            <br/>
+            <br/>
+            <form [formGroup]="formLogin" (submit)="send()" class="example-form">
+              <mat-form-field>
+                <mat-label for="nombre">Nombre</mat-label>
+                <input matInput id="nombre" type="text" formControlName='nombre' />
+              </mat-form-field>
+              <br />
+              <mat-form-field>
+                <mat-label for="trabajo">Trabajo</mat-label>
+                <input matInput id="trabajo" type="text" formControlName='trabajo' />
+              </mat-form-field>
+              <mat-divider></mat-divider>
+              <button mat-button (click)="send()">
+                Enviar
+              </button>
+            </form>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
